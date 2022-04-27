@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.typekit.net/upt8ghq.css">
+    <title>soft sensors</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <b>Annie Liu</b>
+        <c>E-Textiles</c>
+        <a class="active" href="index.html">projects</a>
+        <a href="about.html">about</a>
+        <br>
+        <br>
+        <d>Other Works</d>
+        <a href="https://liuannie.github.io/">physical computing</a>
+        <a href="https://liuannie.github.io/hcde533/">digital fabrication</a>
+        <a href="https://liuannie.github.io/hcde451/">ux prototyping</a>
+    </div>
+
+    <div class="content" style="padding-left: 20px">
+        <h1 style="padding-top: 10px">soft sensors</h1>
+        <h3 style="font-style: italic; font-weight: lighter;">April 27, 2022</h3> <!-- DATE POSTED-->
+        <iframe width="80%" height="500px" src="https://www.youtube.com/embed/VyO-lPYJAWg"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <h2>Description</h2>
+        <p style="width: 80%">
+            I knitted a few soft sensors using conductive thread and non-conductive yarn. These soft sensors 
+            were then put into a circuit where values read from the sensor would affect an LED's behavior.
+        </p>
+
+        <p style="width: 80%">
+            This was my first time creating textile-based soft sensors. During this experience, I learned how to knit and 
+            integrate my soft sensor in a circuit (used Arduino Uno). To check the sensor values I could get, I utilized 
+            the built-in example, AnalogReadSerial, on Arduino's platform. I created a total of four knitted soft sensor swatches, 
+            but only two of the sensors provided steady, reliable readings. These two sensors were put into a circuit. I treated 
+            one as a stretch sensor and mapped the sensor values to an LED's brightness. I programmed the second sensor as a button/touch sensor 
+            to turn the LED off and on.
+        </p>
+
+        
+        <p style="width: 80%">
+            Overall, I look forward to making more soft sensors in the future and using hand-crafting techniques, like knitting, 
+            to create these sensors.
+        </p>
+
+        <img src="A2-Soft_Sensor/swatches.jpg" width=80%>
+        <p style="width: 80%;font-style: italic; font-size: 14px"> <!-- CAPTION -->
+            All knitted swatches. 
+        </p>
+
+        <img src="A2-Soft_Sensor/working_swatches.jpg" width=80%>
+        <p style="width: 80%;font-style: italic; font-size: 14px"> <!-- CAPTION -->
+            The two soft sensors that produce steady, reliable readings.
+        </p>
+
+        <h2>Circuit</h2>
+        <p style="width: 80%">
+            The soft sensors were crafted from conductive thread and non-conductive yarn. The Arduino circuit utilizes a soft sensor, 
+            a 220 ohm resistor, and a green LED. The sensor is connected to A0, and the LED is connected to pin 11.
+        </p>
+
+        <img src="A2-Soft_Sensor/stretch_circuit.jpg" width=80%>
+        <p style="width: 80%;font-style: italic; font-size: 14px"> <!-- CAPTION -->
+            Stretch Sensor Circuit
+        </p>
+
+        <img src="A2-Soft_Sensor/button_circuit.jpg" width=80%>
+        <p style="width: 80%;font-style: italic; font-size: 14px"> <!-- CAPTION -->
+            Button/Touch Sensor Circuit
+        </p>
+
+        <h2>Code: Stretch Sensor</h2>
+        <iframe src=https://create.arduino.cc/editor/annielili/2df3f991-38b6-450a-b246-932699fcdeeb/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+
+        <h2>Code: Button/Touch Sensor</h2>
+        <iframe src=https://create.arduino.cc/editor/annielili/61ff0bc9-5b5c-42da-a5e5-1858c59a5fac/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+        
+        <h2>References</h2>
+        <p style="width: 80%">
+            - 
+            <a target="_blank" href="https://youtu.be/p_R1UDsNOMk" style="color: deeppink">
+                How to Knit
+            </a>
+            <br>
+
+            - 
+            <a target="_blank" href="https://youtu.be/VSwjIUiQZlM" style="color: deeppink">
+                How to Bind Off Knitting
+            </a>
+            <br>
+
+            - 
+            <a target="_blank" href="https://youtu.be/hZqryncwI7g" style="color: deeppink">
+                Soft Fabric Sensors
+            </a>
+            <br>
+
+            - 
+            <a target="_blank" href="https://youtu.be/XcbnPQBJxVs" style="color: deeppink">
+                Capactive Touch with Conductive Fabric
+            </a>
+            <br>
+
+            - 
+            <a target="_blank" href="https://youtu.be/qr3Ke57s3gU" style="color: deeppink">
+                Plush Game Controller
+            </a>
+            <br>
+
+            - 
+            <a target="_blank" href="https://www.kobakant.at/DIY/?p=9298" style="color: deeppink">
+                Kobakant Sensors
+            </a>
+            <br>
+        </p>
+
+        <h2>Specifications</h2>
+        <p style="width: 80%">
+            conductive thread, non-conductive yarn, Arduino Uno, green LED, 220 ohm resistor, alligator clips, jumper wires
+        </p>
+
+    </div>
+
+
+</body>
+
+</html>
